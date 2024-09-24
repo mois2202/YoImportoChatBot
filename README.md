@@ -42,3 +42,9 @@ If you want to discover all the functions and features offered by the library yo
 ## Contact Us
 - [💻 Discord](https://link.codigoencasa.com/DISCORD)
 - [👌 𝕏 (Twitter)](https://twitter.com/leifermendez)
+
+
+
+## Bugs solution 
+
+-For Problems with dependence in windowns: npm install --cpu=wasm32 sharp
