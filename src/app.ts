@@ -4,6 +4,7 @@ import { MemoryDB as Database } from '@builderbot/bot'
 import { BaileysProvider as Provider } from '@builderbot/provider-baileys'
 import { mensajeBienvenida, fechaCurso, queAprenderas, costoCurso, hablarConAsesor } from './messages'
 import axios from 'axios'
+import VerificarSistema from '../PreparacionSistema/VerificarSistema'
 
 
 const PORT = process.env.PORT ?? 3008
@@ -67,6 +68,11 @@ const menu4Flow = addKeyword(EVENTS.ACTION).addAnswer(hablarConAsesor).addAction
 
 
 const main = async () => {
+      /*if (!VerificarSistema()) 
+      {
+        process.exit(1);  
+      } */
+
     const adapterFlow = createFlow([menuFlow, menu1Flow, menu2Flow, menu3Flow, menu4Flow])
     
     const adapterProvider = createProvider(Provider)
