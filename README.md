@@ -42,3 +42,6 @@ If you want to discover all the functions and features offered by the library yo
 ## Contact Us
 - [💻 Discord](https://link.codigoencasa.com/DISCORD)
 - [👌 𝕏 (Twitter)](https://twitter.com/leifermendez)
+
+## Para resolver el problema de sharp ejecuta esta comando 
+npm install --cpu=wasm32 sharp

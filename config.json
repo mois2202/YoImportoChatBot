@@ -1,9 +1,0 @@
-{
-  "db": {
-    "user": "sa",
-    "password": "Sa753951.",
-    "host": "localhost",
-    "database": "BdBot",
-    "port": "5050"
-  }
-}

@@ -1,0 +1,74 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '584142735979@s.whatsapp.net',
+    fromMe: false,
+    id: '3F7FA3B0737E47CF7232',
+    participant: undefined
+  },
+  messageTimestamp: 1729023306,
+  pushName: 'Samuel D Sánchez',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  name: 'Samuel D Sánchez',
+  from: '584142735979',
+  host: '584264010357'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9bdd5d82-9c9a-404a-86c0-4cebf878f426',
+  keyword: 'key_a36b22b0-2c8a-487f-9c70-812b9a413e95',
+  answer: '🙌 Hello welcome to this *Chatbot*',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '5c1294e97c0ddb4e8ec08e67f5acc4db'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a3c5f722-a666-479b-bab0-295f4f84394c',
+  keyword: 'ans_9bdd5d82-9c9a-404a-86c0-4cebf878f426',
+  answer: 'I share with you the following links of interest about the project\n' +
+    '👉 *doc* to view the documentation',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 800,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '639d54d16fd9c25c432d0b4f61bbbf74'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4ee151f4-0784-4931-92c7-5a3369c4286d',
+  keyword: 'ans_a3c5f722-a666-479b-bab0-295f4f84394c',
+  answer: '__capture_only_intended__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 800,
+    idle: undefined,
+    ref: undefined,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'b0985eca2c29edbdd92051fc01050382'
+}
