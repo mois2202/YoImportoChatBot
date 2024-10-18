@@ -2,28 +2,29 @@
   key: {
     remoteJid: '584142735979@s.whatsapp.net',
     fromMe: false,
-    id: '3F7FA3B0737E47CF7232',
+    id: '6F0A5F902CF3340C07CA6C75ADAD8C3F',
     participant: undefined
   },
-  messageTimestamp: 1729023306,
+  messageTimestamp: 1729193367,
   pushName: 'Samuel D Sánchez',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
+    conversation: 'Jola',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
     }
   },
-  body: 'hola',
+  body: 'Jola',
   name: 'Samuel D Sánchez',
   from: '584142735979',
   host: '584264010357'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_9bdd5d82-9c9a-404a-86c0-4cebf878f426',
-  keyword: 'key_a36b22b0-2c8a-487f-9c70-812b9a413e95',
-  answer: '🙌 Hello welcome to this *Chatbot*',
+  ref: 'ans_5d8ccbfa-fd1a-422c-84d8-4f611b90cd82',
+  keyword: 'key_2fbe6691-db35-4df2-9266-c138af612031',
+  answer: '__call_action__',
   options: {
     media: undefined,
     buttons: [],
@@ -33,42 +34,47 @@
     ref: undefined,
     nested: [],
     keyword: {},
-    callback: false
+    callback: true
   },
-  refSerialize: '5c1294e97c0ddb4e8ec08e67f5acc4db'
+  refSerialize: 'a47f5a761ac10c4c23b14c6400b2961c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584142735979@s.whatsapp.net',
+    fromMe: false,
+    id: '6BBA3A6F53DC4934A3BAF1817D2CDF7B',
+    participant: undefined
+  },
+  messageTimestamp: 1729193443,
+  pushName: 'Samuel D Sánchez',
+  broadcast: false,
+  message: Message {
+    conversation: 'Bd',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Bd',
+  name: 'Samuel D Sánchez',
+  from: '584142735979',
+  host: '584264010357'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_a3c5f722-a666-479b-bab0-295f4f84394c',
-  keyword: 'ans_9bdd5d82-9c9a-404a-86c0-4cebf878f426',
-  answer: 'I share with you the following links of interest about the project\n' +
-    '👉 *doc* to view the documentation',
+  ref: 'ans_5d8ccbfa-fd1a-422c-84d8-4f611b90cd82',
+  keyword: 'key_2fbe6691-db35-4df2-9266-c138af612031',
+  answer: '__call_action__',
   options: {
     media: undefined,
     buttons: [],
     capture: false,
-    delay: 800,
+    delay: 0,
     idle: undefined,
     ref: undefined,
     nested: [],
     keyword: {},
-    callback: false
-  },
-  refSerialize: '639d54d16fd9c25c432d0b4f61bbbf74'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_4ee151f4-0784-4931-92c7-5a3369c4286d',
-  keyword: 'ans_a3c5f722-a666-479b-bab0-295f4f84394c',
-  answer: '__capture_only_intended__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: true,
-    delay: 800,
-    idle: undefined,
-    ref: undefined,
-    nested: [ [Object], [Object] ],
-    keyword: {},
     callback: true
   },
-  refSerialize: 'b0985eca2c29edbdd92051fc01050382'
+  refSerialize: 'a47f5a761ac10c4c23b14c6400b2961c'
 }

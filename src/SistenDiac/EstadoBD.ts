@@ -14,12 +14,21 @@ const client = new pg.Client({
 export function VerEstadoDB() : boolean {
     let estado = false;
     try {
+
         client.connect();
         client.query('SELECT 1');
         console.log('Conectado a PostgreSQL');
         estado = true
+
     } catch (err) {
+
         console.error('Error al conectar a PostgreSQL', err);
+    }
+
+    finally {
+
+        client.end();
+        
     }
     return estado;
 }
