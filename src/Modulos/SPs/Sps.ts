@@ -26,21 +26,21 @@ export async function ExecuteSP(procedureName: string, params: any[]): Promise<v
   }
 }
 
-export async function ExecuteSPR(procedureName: string, params: any[]): Promise<any> {
+export async function ExecuteSPR(functionName: string, params: any[]): Promise<any> {
   const client = new pg.Client({ user: user_pg, host: host_pg, database: database_pg, password: password_pg, port: port_pg });
 
   try {
     await client.connect();
 
     const paramPlaceholders = params.map((_, index) => `$${index + 1}`).join(', ');
-    const query = `CALL ${procedureName}(${paramPlaceholders})`;
+    const query = `SELECT * FROM ${functionName}(${paramPlaceholders})`;
     const res = await client.query(query, params);
 
     return res.rows;
 
   } catch (err) {
 
-    console.error('Error al ejecutar el procedimiento', err);
+    console.error('Error al ejecutar la función', err);
     return null;
     
   } finally {

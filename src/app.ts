@@ -1,30 +1,19 @@
 import { createBot, createProvider, createFlow, addKeyword, utils ,EVENTS} from '@builderbot/bot'
 import { PostgreSQLAdapter as Database } from '@builderbot/database-postgres'
 import { BaileysProvider as Provider } from '@builderbot/provider-baileys'
-import { ExecuteSP, ExecuteSPR } from './Modulos/SPs/Sps';
-
+import ElBotcito from './ElBotcito';
 import config from './config.json';
 import ComprobarSistema from './SistenDiac/ComprobarSistema';
-import { BotContext } from '@builderbot/bot/dist/types';
 
 const { host_pg, user_pg, password_pg, database_pg, port_pg } = config.db;
-const PORT = process.env.PORT ?? 3008
-
+const PORT = process.env.PORT ?? 3008;
 
 const NewClient = addKeyword(EVENTS.WELCOME)
-.addAction(async (ctx) => {
-    ElBotcito(ctx);
-})
+  .addAction(async (ctx, { flowDynamic }) => {
+    const respuesta = await ElBotcito(ctx);
+    await flowDynamic(respuesta);
+  });
 
-const ElBotcito = async (ctx:BotContext) => {
-   const inf:any[] = await ExecuteSPR('V_Is_Exist_Client', [ctx.from]);
-   if (inf.length > 0) {
-       // Handle the result here
-       console.log('Client exists:', inf);
-   } else {
-       console.log('Client does not exist');
-   }
-}
 
 const main = async () => {
     

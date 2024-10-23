@@ -1,7 +1,7 @@
 import * as EstadoBD from './EstadoBD';
 
-function ComprobarSistema() : boolean {    
-    return EstadoBD.VerEstadoDB();
+async function ComprobarSistema() : Promise<boolean> {    
+    return await EstadoBD.VerEstadoDB();
 }
 
 export default ComprobarSistema;

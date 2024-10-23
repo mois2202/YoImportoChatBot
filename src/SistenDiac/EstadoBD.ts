@@ -11,24 +11,25 @@ const client = new pg.Client({
   port: port_pg,
 });
 
-export function VerEstadoDB() : boolean {
+export async function VerEstadoDB(): Promise<boolean> {
     let estado = false;
+  
     try {
 
-        client.connect();
-        client.query('SELECT 1');
-        console.log('Conectado a PostgreSQL');
-        estado = true
+      await client.connect();
+      await client.query('SELECT 1');
+      console.log('Conectado a PostgreSQL');
+      estado = true;
 
     } catch (err) {
 
-        console.error('Error al conectar a PostgreSQL', err);
-    }
+      console.error('Error al conectar a PostgreSQL', err);
 
-    finally {
+    } finally {
 
-        client.end();
-        
+      await client.end();
+      
     }
+  
     return estado;
-}
+  }
