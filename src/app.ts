@@ -10,8 +10,7 @@ const PORT = process.env.PORT ?? 3008;
 
 const NewClient = addKeyword(EVENTS.WELCOME)
   .addAction(async (ctx, { flowDynamic }) => {
-    const respuesta = await ElBotcito(ctx);
-    await flowDynamic(respuesta);
+    await flowDynamic(await ElBotcito(ctx));
   });
 
 

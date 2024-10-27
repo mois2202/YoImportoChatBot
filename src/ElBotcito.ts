@@ -5,7 +5,16 @@ import { BotContext } from '@builderbot/bot/dist/types';
     try {
 
         const info:any[] = await ExecuteSPR('F_get_Is_Exist_Client', [ctx.from]); 
-        return Seguimiento(ctx.from);              
+        if(info[0].isexistr)
+        {
+            return Seguimiento(ctx.from,ctx.body);   
+
+        }else{
+
+            console.log(info);
+            return info[0].tcontenido;
+
+        }
 
     } catch (error) {
 
@@ -14,10 +23,9 @@ import { BotContext } from '@builderbot/bot/dist/types';
     }
 }
 
-async function Seguimiento(from:string) : Promise<string> {
-    const info:any[] = await ExecuteSPR('get_content', [from]);
+async function Seguimiento(from:string, resp:string) : Promise<string> {
+    const info:any[] = await ExecuteSPR('f_get_content', [from,resp]);
     console.log(info);
-    console.log(info[0].tcontenido);
     return info[0].tcontenido;
 }
 

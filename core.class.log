@@ -2,28 +2,28 @@
   key: {
     remoteJid: '584142735979@s.whatsapp.net',
     fromMe: false,
-    id: 'DDAB739745746F4E702CC32B1B9763FE',
+    id: '5475191B778CC0504A80537537538762',
     participant: undefined
   },
-  messageTimestamp: 1729656129,
+  messageTimestamp: 1730059528,
   pushName: 'Samuel D Sánchez',
   broadcast: false,
   message: Message {
-    conversation: 'Jola',
+    conversation: 'Hola',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'Jola',
+  body: 'Hola',
   name: 'Samuel D Sánchez',
   from: '584142735979',
   host: '584264010357'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c547e08c-df26-4896-848b-1a9138fb5250',
-  keyword: 'key_533d0138-d304-49bd-b7e1-cd5518a6e7d7',
+  ref: 'ans_2a436b85-b680-4e07-b8f0-081315b544bf',
+  keyword: 'key_d4193447-3c2c-4707-98f2-19dbcc589ec8',
   answer: '__call_action__',
   options: {
     media: undefined,
@@ -36,5 +36,365 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'abe9fd2923f19cd6750724d6a067df7d'
+  refSerialize: 'bdafc4d80cceb30ebf36ee07723249f4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584142735979@s.whatsapp.net',
+    fromMe: false,
+    id: 'A50E91F7565B6E396736A73EA3BAEAC0',
+    participant: undefined
+  },
+  messageTimestamp: 1730059535,
+  pushName: 'Samuel D Sánchez',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  name: 'Samuel D Sánchez',
+  from: '584142735979',
+  host: '584264010357'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2a436b85-b680-4e07-b8f0-081315b544bf',
+  keyword: 'key_d4193447-3c2c-4707-98f2-19dbcc589ec8',
+  answer: '__call_action__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'bdafc4d80cceb30ebf36ee07723249f4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584142735979@s.whatsapp.net',
+    fromMe: false,
+    id: '03B0FE1872BAA39C57159AE8DADDD936',
+    participant: undefined
+  },
+  messageTimestamp: 1730059738,
+  pushName: 'Samuel D Sánchez',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  name: 'Samuel D Sánchez',
+  from: '584142735979',
+  host: '584264010357'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2a436b85-b680-4e07-b8f0-081315b544bf',
+  keyword: 'key_d4193447-3c2c-4707-98f2-19dbcc589ec8',
+  answer: '__call_action__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'bdafc4d80cceb30ebf36ee07723249f4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584142735979@s.whatsapp.net',
+    fromMe: false,
+    id: '7A37DBEF5C89648C824E8F79E5557490',
+    participant: undefined
+  },
+  messageTimestamp: 1730059742,
+  pushName: 'Samuel D Sánchez',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  name: 'Samuel D Sánchez',
+  from: '584142735979',
+  host: '584264010357'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2a436b85-b680-4e07-b8f0-081315b544bf',
+  keyword: 'key_d4193447-3c2c-4707-98f2-19dbcc589ec8',
+  answer: '__call_action__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'bdafc4d80cceb30ebf36ee07723249f4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584142735979@s.whatsapp.net',
+    fromMe: false,
+    id: '1A304B1D57759F2FD032133363B76C3A',
+    participant: undefined
+  },
+  messageTimestamp: 1730059792,
+  pushName: 'Samuel D Sánchez',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  name: 'Samuel D Sánchez',
+  from: '584142735979',
+  host: '584264010357'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2a436b85-b680-4e07-b8f0-081315b544bf',
+  keyword: 'key_d4193447-3c2c-4707-98f2-19dbcc589ec8',
+  answer: '__call_action__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'bdafc4d80cceb30ebf36ee07723249f4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584142735979@s.whatsapp.net',
+    fromMe: false,
+    id: 'E331494F8859DB151F6CF563DDDA1075',
+    participant: undefined
+  },
+  messageTimestamp: 1730059795,
+  pushName: 'Samuel D Sánchez',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  name: 'Samuel D Sánchez',
+  from: '584142735979',
+  host: '584264010357'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2a436b85-b680-4e07-b8f0-081315b544bf',
+  keyword: 'key_d4193447-3c2c-4707-98f2-19dbcc589ec8',
+  answer: '__call_action__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'bdafc4d80cceb30ebf36ee07723249f4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584142735979@s.whatsapp.net',
+    fromMe: false,
+    id: 'C40F7B0C4F6BCDA8F46AEEE05D611BC2',
+    participant: undefined
+  },
+  messageTimestamp: 1730059801,
+  pushName: 'Samuel D Sánchez',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '2',
+  name: 'Samuel D Sánchez',
+  from: '584142735979',
+  host: '584264010357'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2a436b85-b680-4e07-b8f0-081315b544bf',
+  keyword: 'key_d4193447-3c2c-4707-98f2-19dbcc589ec8',
+  answer: '__call_action__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'bdafc4d80cceb30ebf36ee07723249f4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584142735979@s.whatsapp.net',
+    fromMe: false,
+    id: 'D844FD78BB89588E637E1429A8E6F286',
+    participant: undefined
+  },
+  messageTimestamp: 1730061104,
+  pushName: 'Samuel D Sánchez',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  name: 'Samuel D Sánchez',
+  from: '584142735979',
+  host: '584264010357'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2a436b85-b680-4e07-b8f0-081315b544bf',
+  keyword: 'key_d4193447-3c2c-4707-98f2-19dbcc589ec8',
+  answer: '__call_action__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'bdafc4d80cceb30ebf36ee07723249f4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584142735979@s.whatsapp.net',
+    fromMe: false,
+    id: 'D36551B987FB01BCE0116BF6ACCDFD60',
+    participant: undefined
+  },
+  messageTimestamp: 1730061127,
+  pushName: 'Samuel D Sánchez',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  name: 'Samuel D Sánchez',
+  from: '584142735979',
+  host: '584264010357'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2a436b85-b680-4e07-b8f0-081315b544bf',
+  keyword: 'key_d4193447-3c2c-4707-98f2-19dbcc589ec8',
+  answer: '__call_action__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'bdafc4d80cceb30ebf36ee07723249f4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584142735979@s.whatsapp.net',
+    fromMe: false,
+    id: 'F62C0F2E1E9071816D3666FF88A4C603',
+    participant: undefined
+  },
+  messageTimestamp: 1730061146,
+  pushName: 'Samuel D Sánchez',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '2',
+  name: 'Samuel D Sánchez',
+  from: '584142735979',
+  host: '584264010357'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2a436b85-b680-4e07-b8f0-081315b544bf',
+  keyword: 'key_d4193447-3c2c-4707-98f2-19dbcc589ec8',
+  answer: '__call_action__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'bdafc4d80cceb30ebf36ee07723249f4'
 }
