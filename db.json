@@ -1,0 +1,30 @@
+[
+  {
+    "ref": "ans_43b30ae8-d1c3-490d-b108-0be719c515f3",
+    "keyword": "key_7a169157-0082-427d-b155-4f2d59f29be8",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "53369dd1089aecb2cc5276e4c1ceae44",
+    "from": "584242176107"
+  },
+  {
+    "ref": "9c949bd2-c8dd-44a5-8d35-042501a7e316",
+    "keyword": null,
+    "answer": "No se pudo hacer seguimiento",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "584242176107",
+    "refSerialize": "8a69cc0e7a9add259fb279e3433dcbe2"
+  }
+]

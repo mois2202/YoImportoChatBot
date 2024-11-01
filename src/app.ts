@@ -1,11 +1,8 @@
 import { createBot, createProvider, createFlow, addKeyword, utils ,EVENTS} from '@builderbot/bot'
-import { PostgreSQLAdapter as Database } from '@builderbot/database-postgres'
+import { JsonFileDB } from '@builderbot/database-json'
 import { BaileysProvider as Provider } from '@builderbot/provider-baileys'
 import {InitChat} from './Modulos/InitChat';
-import {dbConfig} from './Modulos/shared/db/dbConfig';
-import {dbConnection} from './Modulos/shared/db/dbConnection';
 
-const { host_pg, user_pg, password_pg, database_pg, port_pg } = dbConfig.db;
 const PORT = process.env.PORT ?? 3008;
 
 const NewClient = addKeyword(EVENTS.WELCOME)
@@ -13,17 +10,12 @@ const NewClient = addKeyword(EVENTS.WELCOME)
     await flowDynamic(await InitChat(ctx));
   });
 
+export type IDatabase = typeof JsonFileDB
 
 const main = async () => {
     const adapterFlow = createFlow([NewClient])  
     const adapterProvider = createProvider(Provider)
-    const adapterDB = new Database({
-       host: host_pg,
-       user: user_pg,
-       database: database_pg,
-       password: password_pg,
-       port: port_pg
-   })
+    const adapterDB = new JsonFileDB({ filename: 'db.json' });
 
     const { handleCtx, httpServer } = await createBot({
         flow: adapterFlow,
@@ -90,7 +82,6 @@ const main = async () => {
     httpServer(+PORT)
 
 }
-
 
 
 main();

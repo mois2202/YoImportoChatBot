@@ -2,222 +2,28 @@
   key: {
     remoteJid: '584242176107@s.whatsapp.net',
     fromMe: false,
-    id: '3F6C472054FF7C6BCCE2',
+    id: '3D3E9B0216B5E413AC03893DA056DE45',
     participant: undefined
   },
-  messageTimestamp: 1730428180,
-  pushName: 'Moisés Ochoa',
+  messageTimestamp: 1730475190,
+  pushName: '584242176107',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: 'hol', contextInfo: [ContextInfo] },
+    conversation: 'Hola',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'hol',
-  name: 'Moisés Ochoa',
-  from: '584242176107',
-  host: '584242835562'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f967357d-015d-4a87-8430-c111e1552ae1',
-  keyword: 'key_893198b5-eff9-49a9-b0fb-1a9f99f4bf5f',
-  answer: '__call_action__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '46ff656a478b67e60ccdcffef8318da7'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584242176107@s.whatsapp.net',
-    fromMe: false,
-    id: '3FF4BD0A025610977865',
-    participant: undefined
-  },
-  messageTimestamp: 1730428251,
-  pushName: 'Moisés Ochoa',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: '1', contextInfo: [ContextInfo] },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '1',
-  name: 'Moisés Ochoa',
-  from: '584242176107',
-  host: '584242835562'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f967357d-015d-4a87-8430-c111e1552ae1',
-  keyword: 'key_893198b5-eff9-49a9-b0fb-1a9f99f4bf5f',
-  answer: '__call_action__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '46ff656a478b67e60ccdcffef8318da7'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584242176107@s.whatsapp.net',
-    fromMe: false,
-    id: '3FB9C0D694B60E18A376',
-    participant: undefined
-  },
-  messageTimestamp: 1730428253,
-  pushName: 'Moisés Ochoa',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: '2', contextInfo: [ContextInfo] },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '2',
-  name: 'Moisés Ochoa',
-  from: '584242176107',
-  host: '584242835562'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f967357d-015d-4a87-8430-c111e1552ae1',
-  keyword: 'key_893198b5-eff9-49a9-b0fb-1a9f99f4bf5f',
-  answer: '__call_action__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '46ff656a478b67e60ccdcffef8318da7'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584242176107@s.whatsapp.net',
-    fromMe: false,
-    id: '3F897894A4443EA8B8B5',
-    participant: undefined
-  },
-  messageTimestamp: 1730428254,
-  pushName: 'Moisés Ochoa',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: '4', contextInfo: [ContextInfo] },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '4',
-  name: 'Moisés Ochoa',
-  from: '584242176107',
-  host: '584242835562'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f967357d-015d-4a87-8430-c111e1552ae1',
-  keyword: 'key_893198b5-eff9-49a9-b0fb-1a9f99f4bf5f',
-  answer: '__call_action__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '46ff656a478b67e60ccdcffef8318da7'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584242176107@s.whatsapp.net',
-    fromMe: false,
-    id: '3F740CA6CC7E12EB8BDB',
-    participant: undefined
-  },
-  messageTimestamp: 1730428261,
-  pushName: 'Moisés Ochoa',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: 'hol', contextInfo: [ContextInfo] },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'hol',
-  name: 'Moisés Ochoa',
-  from: '584242176107',
-  host: '584242835562'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f967357d-015d-4a87-8430-c111e1552ae1',
-  keyword: 'key_893198b5-eff9-49a9-b0fb-1a9f99f4bf5f',
-  answer: '__call_action__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '46ff656a478b67e60ccdcffef8318da7'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584242176107@s.whatsapp.net',
-    fromMe: false,
-    id: '3F16391D6922716052CC',
-    participant: undefined
-  },
-  messageTimestamp: 1730428457,
-  pushName: 'Moisés Ochoa',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: 'Hola', contextInfo: [ContextInfo] },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
     }
   },
   body: 'Hola',
-  name: 'Moisés Ochoa',
+  name: '584242176107',
   from: '584242176107',
   host: '584242835562'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f967357d-015d-4a87-8430-c111e1552ae1',
-  keyword: 'key_893198b5-eff9-49a9-b0fb-1a9f99f4bf5f',
+  ref: 'ans_43b30ae8-d1c3-490d-b108-0be719c515f3',
+  keyword: 'key_7a169157-0082-427d-b155-4f2d59f29be8',
   answer: '__call_action__',
   options: {
     media: undefined,
@@ -230,44 +36,5 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '46ff656a478b67e60ccdcffef8318da7'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '584242176107@s.whatsapp.net',
-    fromMe: false,
-    id: '3F83BF6748D934ED213B',
-    participant: undefined
-  },
-  messageTimestamp: 1730428460,
-  pushName: 'Moisés Ochoa',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: 'moises', contextInfo: [ContextInfo] },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'moises',
-  name: 'Moisés Ochoa',
-  from: '584242176107',
-  host: '584242835562'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f967357d-015d-4a87-8430-c111e1552ae1',
-  keyword: 'key_893198b5-eff9-49a9-b0fb-1a9f99f4bf5f',
-  answer: '__call_action__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '46ff656a478b67e60ccdcffef8318da7'
+  refSerialize: '53369dd1089aecb2cc5276e4c1ceae44'
 }
