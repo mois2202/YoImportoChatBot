@@ -10,13 +10,13 @@ CREATE OR REPLACE FUNCTION public.f_get_content(
 AS $BODY$
 
 DECLARE
-    PociblesOpciones TEXT;
+    PosiblesOpciones TEXT;
     selectOpc TEXT;
 
 BEGIN
 
-	PociblesOpciones := (SELECT respuestas  FROM get_cotenido_seguimiento WHERE numero = num);
-	selectOpc := (SELECT f_get_respuesta(PociblesOpciones, opc));
+	PosiblesOpciones := (SELECT respuestas  FROM get_cotenido_seguimiento WHERE numero = num);
+	selectOpc := (SELECT f_get_respuesta(PosiblesOpciones, opc));
 	UPDATE clientes SET seguimiento = selectOpc WHERE numero = num;
 		
 	
