@@ -1,7 +1,3 @@
--- Table: public.infoclientes
-
--- DROP TABLE IF EXISTS public.infoclientes;
-
 CREATE TABLE IF NOT EXISTS public.infoclientes
 (
     idcliente integer NOT NULL DEFAULT nextval('infoclientes_idcliente_seq'::regclass),

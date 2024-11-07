@@ -15,14 +15,14 @@ DECLARE
 
 BEGIN
 
-	PociblesOpciones := (SELECT respuestas  FROM get_cotenido_seguimiento WHERE numero = num);
+	PociblesOpciones := (SELECT respuestas  FROM v_get_cotenido_seguimiento WHERE numero = num);
 	selectOpc := (SELECT f_get_respuesta(PociblesOpciones, opc));
-	UPDATE clientes SET seguimiento = selectOpc WHERE numero = num;
+	UPDATE clientes SET seguimiento = selectOpc, ultimomsj = NOW() WHERE numero = num;
 		
 	
     RETURN QUERY 
     SELECT id,contenido, respuestas 
-    FROM get_cotenido_seguimiento 
+    FROM v_get_cotenido_seguimiento 
     WHERE numero = num;
 	
 END;
