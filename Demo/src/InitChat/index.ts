@@ -1,3 +1,4 @@
+import { sendMedia } from '~/Media/TypeMessagesFunctions';
 import {ExecuteSQLFunction}  from '../SQLExecute';
 import { BotContext } from '@builderbot/bot/dist/types';
 
@@ -16,16 +17,22 @@ import { BotContext } from '@builderbot/bot/dist/types';
     }
 }
 
-async function Seguimiento(from:string, resp:string) : Promise<string> {
-    try{
-        const info:any[] = await ExecuteSQLFunction('f_get_content', [from,resp]);
+async function Seguimiento(from: string, resp: string): Promise<any> {
+    try {
+        const info: any[] = await ExecuteSQLFunction('f_get_content', [from, resp]);
         console.log(info);
+        if (info[0].ttype) {
+            const responseFile = sendMedia(info[0].type, info[0].filename, info[0].tcontenido);
+            if (responseFile) {
+                return responseFile;
+            }
+            return info[0].tcontenido;
+        }
         return info[0].tcontenido;
     }
-    catch{
-        console.log('Error al ejecutar segunda interaccion')
+    catch {
+        console.log('Error al ejecutar segunda interacción');
         return 'No se pudo hacer seguimiento';
     }
-
 }
 

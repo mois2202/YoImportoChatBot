@@ -6,7 +6,9 @@ CREATE OR REPLACE VIEW public.v_get_cotenido_seguimiento
     c.seguimiento,
     f.id,
     f.contenido,
-    f.respuestas
+    f.respuestas,
+    f.type,
+    f.filename
    FROM clientes c
      LEFT JOIN flujo f ON f.id::text = c.seguimiento::text;
 

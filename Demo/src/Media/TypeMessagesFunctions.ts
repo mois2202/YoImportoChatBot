@@ -34,3 +34,22 @@ export const sendPDF = (pdfName: string, body?: string): { body?: string; mediaP
     const PDFToSend = [{ body, mediaPath }];
     return PDFToSend;
 };
+
+export const sendMedia= (type : string, fileName: string, body?: string) => {
+    if(type == "AUDIO"){
+        return sendAudio(fileName, body);
+    }
+    if(type == "IMAGE"){
+        return sendImage(fileName, body);
+    }
+    if(type == "VIDEO"){
+        return sendVideo(fileName, body);
+    }
+    if(type == "DOC"){
+        return sendDoc(fileName, body);
+    }
+    if(type == "PDF"){
+        return sendPDF(fileName, body);
+    }
+    return null;
+}
