@@ -3,13 +3,21 @@ import { BaileysProvider as Provider } from '@builderbot/provider-baileys'
 import { MemoryDB as Database } from '@builderbot/bot'
 import {ComprobarSistema} from './SistemDiac/ComprobarSistemas'
 import { InitChat } from './InitChat'
+import { console } from 'inspector'
 
 const PORT = process.env.PORT ?? 3008
 
-
 const ElBotcito = addKeyword(EVENTS.WELCOME)
   .addAction(async (ctx, { flowDynamic }) => {
-    await flowDynamic(await InitChat(ctx));
+    const resul = await InitChat(ctx);
+    if(Array.isArray(resul))
+    {
+        await flowDynamic([{ body: resul[0], media: resul[1] }]);
+    }
+    else
+    {
+        await flowDynamic(resul);   
+    }
   });
 
 const main = async () => {

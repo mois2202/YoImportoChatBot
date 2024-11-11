@@ -11,7 +11,7 @@ BEGIN
 
     IF (SELECT COUNT(*) FROM clientes WHERE numero = num) = 0 THEN
 
-        INSERT INTO clientes (numero, seguimiento, respuestas,ultimomsj) VALUES (num, 'tw1','',NOW());
+        INSERT INTO clientes (numero, seguimiento, ultimomsj) VALUES (num, 'tw1',NOW());
 
 	RETURN QUERY
     SELECT contenido,false as IsExistR  FROM flujo WHERE id = 'tw1';
