@@ -1,30 +1,30 @@
-CREATE OR REPLACE FUNCTION public.f_get_respuesta(
-	entry text,
-	match text)
-    RETURNS text
+CREATE OR REPLACE FUNCTION public.f_get_respuesta(num text,selectOpc text)
+    RETURNS TABLE(tid character varying, tcontenido text, trespuestas text, ttypeMedia boolean, tfileName varchar(300)) 
     LANGUAGE 'plpgsql'
     COST 100
     VOLATILE PARALLEL UNSAFE
+    ROWS 1000
 AS $BODY$
-DECLARE
-    parts text[];
-    part text;
-    key_value text[];
-    result text;
+
+DECLARE 
+
+ProximoFlujo text = (SELECT respuestas FROM flujo WHERE id = selectOpc);
+Regresar text = (SELECT contenido FROM complementos WHERE id = 2);
+Inicio text = (SELECT contenido FROM complementos WHERE id = 1);
 BEGIN
 
-    parts := string_to_array(entry, ',');
+	IF(ProximoFlujo = 'Sin Datos') THEN
 
-    FOREACH part IN ARRAY parts LOOP
-        key_value := string_to_array(part, ':');
+		RETURN QUERY
+		SELECT id, CONCAT(contenido, Inicio), respuestas, typeMedia, filename FROM v_get_info_seguimiento WHERE numero = num;
+	
+	ELSE
+	
+		RETURN QUERY 
+		SELECT id, CONCAT(contenido, Regresar), respuestas , typeMedia, filename FROM v_get_info_seguimiento WHERE numero = num;
 
-        IF key_value[1] = match THEN
-            result := key_value[2];
-            EXIT;
-        END IF;
-    END LOOP;
+	END IF;
 
-    RETURN result;
 END;
 $BODY$;
 
