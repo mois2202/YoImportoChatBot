@@ -4,11 +4,8 @@ import { MemoryDB as Database } from '@builderbot/bot'
 import {ComprobarSistema} from './SistemDiac/ComprobarSistemas'
 import { InitChat } from './InitChat'
 import { console } from 'inspector'
-import dotenv from 'dotenv';
 
-dotenv.config();
-
-const PORT = process.env.APP_CONTAINER_PORT ?? 3008
+const PORT = process.env.PORT ?? 3008
 
 const ElBotcito = addKeyword(EVENTS.WELCOME)
   .addAction(async (ctx, { flowDynamic }) => {

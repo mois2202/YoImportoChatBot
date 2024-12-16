@@ -1,28 +1,40 @@
-# Etapa de construcción
-FROM node:20-alpine3.18 AS builder
+# Image size ~ 400MB
+FROM node:21-alpine3.18 as builder
 
 WORKDIR /app
 
-# Copia los archivos de package y instala las dependencias
-COPY package*.json ./
-RUN npm install
+RUN corepack enable && corepack prepare pnpm@latest --activate
+ENV PNPM_HOME=/usr/local/bin
 
-# Copia el resto de la aplicación
 COPY . .
 
-# Compila la aplicación si es necesario (por ejemplo, para aplicaciones TypeScript)
- RUN npm run build
+COPY package*.json *-lock.yaml ./
 
-# Etapa de despliegue
-FROM node:20-alpine3.18 AS deploy
+RUN apk add --no-cache --virtual .gyp \
+        python3 \
+        make \
+        g++ \
+    && apk add --no-cache git \
+    && pnpm install && pnpm run build \
+    && apk del .gyp
+
+FROM node:21-alpine3.18 as deploy
 
 WORKDIR /app
 
-# Copia las dependencias instaladas y los archivos de la aplicación desde la etapa de construcción
-COPY --from=builder /app /app
+ARG PORT
+ENV PORT $PORT
+EXPOSE $PORT
 
-# Exponer el puerto que usa tu aplicación
-EXPOSE 3000
+COPY --from=builder /app/assets ./assets
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/*.json /app/*-lock.yaml ./
 
-# Comando para iniciar la aplicación
+RUN corepack enable && corepack prepare pnpm@latest --activate 
+ENV PNPM_HOME=/usr/local/bin
+
+RUN npm cache clean --force && pnpm install --production --ignore-scripts \
+    && addgroup -g 1001 -S nodejs && adduser -S -u 1001 nodejs \
+    && rm -rf $PNPM_HOME/.npm $PNPM_HOME/.node-gyp
+
 CMD ["npm", "start"]
